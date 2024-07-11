@@ -53,7 +53,7 @@ const uploadsApi =
 
 const getReleaseByVer = async (tag) => {
   const resp = await releasesApi('');
-  const found = resp.find(r => r.name.includes(tag));
+  const found = resp.find(r => (r.name ?? '').includes(tag));
   return found === undefined ? undefined : found.id;
 }
 
