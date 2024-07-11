@@ -96,7 +96,7 @@ const UPLOAD = {
   'zip/linux/x64/Wournal-linux-x64-<<VER>>.zip' : 'Wournal-GNU-Linux-Portable-<<VER>>.zip',
   'zip/win32/x64/Wournal-win32-x64-<<VER>>.zip' : 'Wournal-Windows-Portable-<<VER>>.zip',
   'AppImage/x64/Wournal-<<VER>>-x64.AppImage'   : 'Wournal-GNU-Linux-<<VER>>.AppImage',
-  'nsis/x64/Wournal.Setup.<<VER>>.exe'          : 'Wournal-Windows-Setup-<<VER>>.exe',
+  'nsis/x64/Wournal Setup <<VER>>.exe'          : 'Wournal-Windows-Setup-<<VER>>.exe',
 };
 
 async function main() {
