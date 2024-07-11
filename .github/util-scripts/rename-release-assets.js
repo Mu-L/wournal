@@ -60,9 +60,9 @@ const deleteAsset = (id) => assetsApi(`/${id}`, { method: 'DELETE' });
 // ----------------------------------------------------------------------
 
 const RENAME = {
-  'Wournal-<<VER>>-x64.AppImage'  : 'Wournal-Linux-<<VER>>.AppImage',
-  'Wournal-linux-x64-<<VER>>.zip' : 'Wournal-Linux-<<VER>>.zip',
-  'Wournal-win32-x64-<<VER>>.zip' : 'Wournal-Windows-<<VER>>.zip',
+  'Wournal-linux-x64-<<VER>>.zip' : 'Wournal-GNU-Linux-Portable-<<VER>>.zip',
+  'Wournal-<<VER>>-x64.AppImage'  : 'Wournal-GNU-Linux-<<VER>>.AppImage',
+  'Wournal-win32-x64-<<VER>>.zip' : 'Wournal-Windows-Portable-<<VER>>.zip',
   'Wournal.Setup.<<VER>>.exe'     : 'Wournal-Windows-Setup-<<VER>>.exe',
 };
 

@@ -9,10 +9,11 @@ import { ErrorPopup } from "app/error-popup";
 import { getLogger, setupLogging } from "util/Logging";
 import { waitInitUi5 } from "util/ui5-boot";
 import { ConfigRepositoryLocalStorage } from "persistence/ConfigRepositoryLocalStorage";
-import environment from "environment";
+import environment from "Shared/environment";
 
 import 'res/font/roboto.css';
 import 'res/font/roboto-mono.css';
+import { mkConfigRepositoryElectronFS } from "persistence/ConfigRepositoryElectronFS";
 
 setupLogging();
 
@@ -57,7 +58,7 @@ async function main() {
   provideDependencies({
     'FileSystem': FileSystemElectron,
     'SystemClipboard': SystemClipboardElectron,
-    'ConfigRepository': ConfigRepositoryLocalStorage.getInstance(),
+    'ConfigRepository': await mkConfigRepositoryElectronFS(),
     'sourceLocation': await ApiClient["process:getRendererSourceDir"](),
   })
 
