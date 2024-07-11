@@ -102,12 +102,13 @@
         "nsis"
       ],
       "icon": "src/renderer/res/icon/wournal/logo.ico",
-      "publish": []
+      "publish": null
     },
     "nsis": {
       "oneClick": "false",
       "allowToChangeInstallationDirectory": true,
-      "license": "LICENSE"
+      "license": "LICENSE",
+      "publish": null
     }
   }
 }
