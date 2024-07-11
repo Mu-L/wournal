@@ -74,6 +74,7 @@ const createRelease = async (tagName) =>
     method: 'POST',
     body: JSON.stringify({
       tag_name: tagName,
+      name: tagName,
       draft: true,
       generate_release_notes: false,
     })
