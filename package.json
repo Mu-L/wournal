@@ -22,8 +22,7 @@
     "package:portable": "cross-env PKG_PORTABLE=true electron-forge package",
     "package": "electron-forge package",
     "make:portable": "cross-env PKG_PORTABLE=true electron-forge make --targets=zip",
-    "make": "electron-forge make",
-    "publish": "electron-forge publish"
+    "make": "electron-forge make"
   },
   "dependencies": {
     "@mvui/core": "file:vendor/mvui/packages/core",
